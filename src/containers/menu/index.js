@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import FondoAzul from '../../Assets/mic/Fondoazul.png';
 import ninos from '../../Assets/mic/ninos.jpg';
-import celebremos from '../../Assets/mic/Celebremos.png';
 import celebremos2 from '../../Assets/mic/celebremos2.png';
 import jugar from '../../Assets/mic/Jugar.png';
 import ver from '../../Assets/mic/VerMas.png';
