@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import FondoAzul from '../../Assets/mic/Fondoazul.png';
 import ninos from '../../Assets/mic/ninos.jpg';
-import celebremos2 from '../../Assets/mic/celebremos2.png';
+import celebremos3 from '../../Assets/mic/Celebremos3.png';
 import jugar from '../../Assets/mic/Jugar.png';
 import ver from '../../Assets/mic/VerMas.png';
 import './index.css';
@@ -16,7 +16,7 @@ export default class Menu extends Component {
           <img src={ninos} className="ninos" alt="" />
         </div>
         <div className="top">
-          <img src={celebremos2} className="celebremos" alt="" />
+          <img src={celebremos3} className="celebremos" alt="" />
           <img
             src={jugar}
             className="celebremos boton"
@@ -25,7 +25,13 @@ export default class Menu extends Component {
               this.props.jugar();
             }}
           />
-          <img src={ver} className="celebremos boton" alt="" />
+          <a
+            href="https://corporaciongrupoterra.com/es/fundacion-terra/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={ver} className="celebremos boton" alt="" />
+          </a>
         </div>
       </React.Fragment>
     );
