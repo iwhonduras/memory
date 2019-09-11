@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1db3ef7a486beaed34a92d1e4e2ea16c",
+    "revision": "cf2ccc008385e0ef0acf1d1128b89d7e",
     "url": "/memory/index.html"
   },
   {
-    "revision": "339ce0bc4dcf4e66e4a0",
-    "url": "/memory/static/css/main.712f3d8d.chunk.css"
+    "revision": "b6e1a0b95c067563b96b",
+    "url": "/memory/static/css/main.fa0e35c4.chunk.css"
   },
   {
-    "revision": "47d4abf8b5c0fc2c3922",
-    "url": "/memory/static/js/2.fbd2d191.chunk.js"
+    "revision": "4397c4957c43392f176f",
+    "url": "/memory/static/js/2.f50c113b.chunk.js"
   },
   {
-    "revision": "339ce0bc4dcf4e66e4a0",
-    "url": "/memory/static/js/main.06724287.chunk.js"
+    "revision": "b6e1a0b95c067563b96b",
+    "url": "/memory/static/js/main.2c8458da.chunk.js"
   },
   {
     "revision": "94f647c09a573e59acd4",
     "url": "/memory/static/js/runtime~main.91f5a326.js"
   },
   {
-    "revision": "db5781c5e706a7cbc9cfb5a842b9d660",
-    "url": "/memory/static/media/Celebremos.db5781c5.png"
+    "revision": "c5ff4f0132fb5f76a351a0a6ceb0b10f",
+    "url": "/memory/static/media/Celebremos3.c5ff4f01.png"
   },
   {
     "revision": "c2b2b83ddebe541acf9bd596727f16ed",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ba8d1abe7090c55852e87d0e012ff51b",
     "url": "/memory/static/media/background2.ba8d1abe.jpg"
-  },
-  {
-    "revision": "d19461347381adf704acd549985338ea",
-    "url": "/memory/static/media/celebremos2.d1946134.png"
   },
   {
     "revision": "27b5e57665f234cf62bb06a2d5b8e65b",
