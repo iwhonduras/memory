@@ -159,8 +159,129 @@ export default class Table extends Component {
         type: 'success',
         title: '¡Felicidades, has ganado!',
         text: ''
+      }).then(() => {
+        this.resetGame();
       });
     }
+  };
+
+  resetGame = () => {
+    const newCards = [
+      {
+        name: 'Honduras',
+        meta: 'Honduras',
+        image: HondurasImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Nicaragua',
+        meta: 'Nicaragua',
+        image: NicaraguaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Costa Rica',
+        meta: 'Costa Rica',
+        image: CostaRicaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Salvador',
+        meta: 'Salvador',
+        image: SalvadorImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Guatemala',
+        meta: 'Guatemala',
+        image: GuatemalaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Honduras 2-1',
+        meta: 'Honduras 2',
+        image: Honduras2Image,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Centro America',
+        meta: 'Centro America',
+        image: CentroAmericaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Centro America2',
+        meta: 'Centro America',
+        image: CentroAmericaImage2,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Honduras2',
+        meta: 'Honduras',
+        image: HondurasImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Nicaragua2',
+        meta: 'Nicaragua',
+        image: NicaraguaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Costa Rica2',
+        meta: 'Costa Rica',
+        image: CostaRicaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Salvador2',
+        meta: 'Salvador',
+        image: SalvadorImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Guatemala2',
+        meta: 'Guatemala',
+        image: GuatemalaImage,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Honduras 2-2',
+        meta: 'Honduras 2',
+        image: Honduras2Image,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Terra',
+        meta: 'Terra',
+        image: TerraBack,
+        partnerFound: false,
+        isFlipped: false
+      },
+      {
+        name: 'Terra2',
+        meta: 'Terra',
+        image: TerraBack,
+        partnerFound: false,
+        isFlipped: false
+      }
+    ];
+    this.setState({ cards: newCards });
+    this.props.resetTurnos();
   };
 
   checkFlippedCards = (name) => {
