@@ -1,0 +1,19 @@
+.card {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10%;
+  width: 70%;
+}
+
+.front {
+  background-color: white;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+}

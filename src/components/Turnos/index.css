@@ -1,0 +1,18 @@
+.contador {
+  position: relative;
+  right: -79%;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 17px;
+  font-size: 25px;
+  width: 15%;
+  color: white;
+}
+
+@media (max-width: 748px) {
+  .contador {
+    right: -70%;
+    width: 23%;
+  }
+}

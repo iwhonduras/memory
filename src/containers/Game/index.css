@@ -1,0 +1,49 @@
+.game {
+  background-image: url('../../Assets/Background/background2.jpg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20%;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+
+.logoBlanco {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.regresar {
+  background-color: #ea5b27;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 14px 41px;
+  text-decoration: none;
+  font-size: 25px;
+  width: 50%;
+  height: 60%;
+  margin-top: 20px;
+}
+
+@media (max-width: 748px) {
+  .logoBlanco {
+    width: 150px;
+  }
+
+  .regresar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.fondoAzul {
+  width: 100vw;
+  height: 50vh;
+}
+
+.ninos {
+  width: 100vw;
+  position: relative;
+  top: -250px;
+  z-index: -5;
+}
+
+.top {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.celebremos {
+  width: 40%;
+  position: relative;
+  top: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.boton {
+  width: 20%;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+@media (max-width: 748px) {
+  .ninos {
+    top: -150px;
+  }
+
+  .fondoAzul {
+    height: 60vh;
+  }
+
+  .celebremos {
+    width: 80%;
+  }
+
+  .boton {
+    width: 50%;
+  }
+}
