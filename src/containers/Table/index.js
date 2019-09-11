@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Swal from 'sweetalert2';
+
 import Card from '../../components/Card';
 
 import TerraImage from '../../Assets/Back/terraLogo.png';
@@ -150,6 +152,17 @@ export default class Table extends Component {
     return array.sort(() => Math.random() - 0.5);
   };
 
+  checkWin = () => {
+    const win = this.state.cards.every((card) => card.partnerFound);
+    if (win) {
+      Swal.fire({
+        type: 'success',
+        title: 'GANASTE!',
+        text: 'Felicidades, has ganado!'
+      });
+    }
+  };
+
   checkFlippedCards = (name) => {
     let selectedCards = this.state.attemptCardsFlipped;
     if (this.state.attemptCardsFlipped.length < 2) {
@@ -164,6 +177,7 @@ export default class Table extends Component {
         this.state.attemptCardsFlipped[0],
         this.state.attemptCardsFlipped[1]
       );
+      this.checkWin();
       this.props.sumarTurno();
       return true;
     } else {
