@@ -13,6 +13,10 @@ export default class Game extends Component {
     juegoIniciado: false
   };
 
+  resetTurnos = () => {
+    this.setState({ turnos: 0 });
+  };
+
   sumarTurno = () => {
     this.setState({
       turnos: this.state.turnos + 1
@@ -37,7 +41,10 @@ export default class Game extends Component {
       ? (render = (
           <div className="game">
             <Turnos turnos={this.state.turnos} />
-            <Table sumarTurno={this.sumarTurno} />
+            <Table
+              sumarTurno={this.sumarTurno}
+              resetTurnos={this.resetTurnos}
+            />
             <footer className="footer">
               <img src={logoBlanco} className="logoBlanco" alt="logo" />
               <button

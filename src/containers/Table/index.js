@@ -138,11 +138,12 @@ export default class Table extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({
       ...this.state,
       cards: this.shuffle(this.state.cards)
     });
+    this.props.resetTurnos();
   }
 
   shuffle = (array) => {
