@@ -226,25 +226,32 @@ export default class Table extends Component {
 
   flipCard = (name) => {
     const { cards } = this.state;
+    let cardAlreadyFlipped = false;
     cards.map((card) => {
+      if (card.name === name && card.isFlipped === true) {
+        cardAlreadyFlipped = true;
+        return card;
+      }
       if (card.name === name && !card.isFlipped) {
         card.isFlipped = true;
       }
       return card;
     });
-    const check = this.checkFlippedCards(name);
-    if (!check) {
-      cards.map((card) => {
-        if (card.name === name && !card.isFlipped) {
-          card.isFlipped = false;
-        }
-        return card;
+    if (cardAlreadyFlipped === false) {
+      const check = this.checkFlippedCards(name);
+      if (!check) {
+        cards.map((card) => {
+          if (card.name === name && !card.isFlipped) {
+            card.isFlipped = false;
+          }
+          return card;
+        });
+      }
+      this.setState({
+        ...this.state,
+        cards
       });
     }
-    this.setState({
-      ...this.state,
-      cards
-    });
   };
 
   render() {
