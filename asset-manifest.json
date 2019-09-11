@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/memory/static/css/main.712f3d8d.chunk.css",
+    "main.js": "/memory/static/js/main.06724287.chunk.js",
+    "main.js.map": "/memory/static/js/main.06724287.chunk.js.map",
+    "runtime~main.js": "/memory/static/js/runtime~main.91f5a326.js",
+    "runtime~main.js.map": "/memory/static/js/runtime~main.91f5a326.js.map",
+    "static/js/2.fbd2d191.chunk.js": "/memory/static/js/2.fbd2d191.chunk.js",
+    "static/js/2.fbd2d191.chunk.js.map": "/memory/static/js/2.fbd2d191.chunk.js.map",
+    "index.html": "/memory/index.html",
+    "precache-manifest.b3499d14d07f45f2a998ce54a8c655fe.js": "/memory/precache-manifest.b3499d14d07f45f2a998ce54a8c655fe.js",
+    "service-worker.js": "/memory/service-worker.js",
+    "static/css/main.712f3d8d.chunk.css.map": "/memory/static/css/main.712f3d8d.chunk.css.map",
+    "static/media/Celebremos.png": "/memory/static/media/Celebremos.db5781c5.png",
+    "static/media/Fondoazul.png": "/memory/static/media/Fondoazul.c2b2b83d.png",
+    "static/media/Jugar.png": "/memory/static/media/Jugar.e0ae5655.png",
+    "static/media/LogoBlanco.png": "/memory/static/media/LogoBlanco.9487c69e.png",
+    "static/media/VerMas.png": "/memory/static/media/VerMas.b33cfc26.png",
+    "static/media/index.css": "/memory/static/media/background2.ba8d1abe.jpg",
+    "static/media/celebremos2.png": "/memory/static/media/celebremos2.d1946134.png",
+    "static/media/centroamerica.png": "/memory/static/media/centroamerica.27b5e576.png",
+    "static/media/guatemala.png": "/memory/static/media/guatemala.6a2c7680.png",
+    "static/media/honduras2.png": "/memory/static/media/honduras2.e696f212.png",
+    "static/media/nicaragua.png": "/memory/static/media/nicaragua.11d6c531.png",
+    "static/media/ninos.jpg": "/memory/static/media/ninos.440a8ddc.jpg",
+    "static/media/salvador.png": "/memory/static/media/salvador.9272fdaf.png",
+    "static/media/terra.png": "/memory/static/media/terra.e61d6085.png",
+    "static/media/terraLogo.png": "/memory/static/media/terraLogo.60deafd2.png"
+  }
+}
