@@ -157,8 +157,8 @@ export default class Table extends Component {
     if (win) {
       Swal.fire({
         type: 'success',
-        title: 'GANASTE!',
-        text: 'Felicidades, has ganado!'
+        title: '¡Felicidades, has ganado!',
+        text: ''
       });
     }
   };
