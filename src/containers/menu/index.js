@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import FondoAzul from '../../Assets/mic/Fondoazul.png';
-import ninos from '../../Assets/mic/ninos.jpg';
+import backgroundNinos from '../../Assets/mic/background.jpg';
 import celebremos4 from '../../Assets/mic/Celebremos4.png';
 import jugar from '../../Assets/mic/Jugar.png';
 import ver from '../../Assets/mic/VerMas.png';
@@ -12,8 +11,7 @@ export default class Menu extends Component {
     return (
       <React.Fragment>
         <div className="background">
-          <img src={FondoAzul} className="fondoAzul" alt="" />
-          <img src={ninos} className="ninos" alt="" />
+          <img src={backgroundNinos} alt="" class="responsiveImage" />
         </div>
         <div className="top">
           <img src={celebremos4} className="celebremos" alt="" />

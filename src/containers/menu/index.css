@@ -1,3 +1,16 @@
+.backgroundNinos {
+  background-image: url('../../Assets/Background/background2.jpg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: 100vh;
+}
+
 .fondoAzul {
   width: 100vw;
   height: 50vh;
@@ -21,15 +34,16 @@
 .celebremos {
   width: 20%;
   position: relative;
-  top: 50px;
+  top: 10px;
   display: block;
   margin: 0 auto;
 }
 
 .boton {
-  width: 15%;
-  margin: 30px auto;
+  width: 10%;
+  margin: 5px auto;
   cursor: pointer;
+  top: -15px;
 }
 
 @media (max-width: 748px) {
@@ -46,6 +60,6 @@
   }
 
   .boton {
-    width: 50%;
+    width: 35%;
   }
 }
