@@ -6,6 +6,7 @@ import Turnos from '../../components/Turnos';
 
 import './index.css';
 import logoBlanco from '../../Assets/mic/LogoBlanco.png';
+import ContadorCard from '../../Assets/mic/ContadorCard.png';
 
 export default class Game extends Component {
   state = {
@@ -40,6 +41,10 @@ export default class Game extends Component {
     this.state.juegoIniciado
       ? (render = (
           <div className="game">
+            <div className="container">
+              <img src={ContadorCard} alt="" />
+              <div className="paresfaltantes">0</div>
+            </div>
             <Turnos turnos={this.state.turnos} />
             <Table
               sumarTurno={this.sumarTurno}

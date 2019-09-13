@@ -5,6 +5,7 @@
   background-position-y: center;
   background-size: cover;
   padding: 5%;
+  padding-top: 0%;
   height: 100vh;
 }
 
@@ -39,6 +40,25 @@
   margin-top: 20px;
 }
 
+.container {
+  position: relative;
+  color: white;
+  display: inline;
+  top: 73px;
+  left: 8%;
+}
+
+.container img {
+  width: 8%;
+}
+
+.paresfaltantes {
+  position: absolute;
+  top: -44px;
+  left: 86px;
+  font-size: 30px;
+}
+
 @media (max-width: 748px) {
   .logoBlanco {
     width: 150px;
@@ -46,5 +66,14 @@
 
   .regresar {
     width: 100%;
+  }
+
+  .container {
+    top: 106px;
+    left: 0%;
+  }
+
+  .container img {
+    width: 130px;
   }
 }
