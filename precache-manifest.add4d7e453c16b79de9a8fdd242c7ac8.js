@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb32fce53923c8e2b8e37e282cf69748",
+    "revision": "52f414dda7136eaed6d97cd040e2b842",
     "url": "/memory/index.html"
   },
   {
-    "revision": "09ca90a4398c5f990a8c",
-    "url": "/memory/static/css/main.ca3a1ec3.chunk.css"
+    "revision": "68283d82a7d0e1d5927c",
+    "url": "/memory/static/css/main.3a5d870d.chunk.css"
   },
   {
-    "revision": "8ee31dd92940d64db9ee",
-    "url": "/memory/static/js/2.72727885.chunk.js"
+    "revision": "6e5485388cc58865cdc6",
+    "url": "/memory/static/js/2.171aef2d.chunk.js"
   },
   {
-    "revision": "09ca90a4398c5f990a8c",
-    "url": "/memory/static/js/main.99203c08.chunk.js"
+    "revision": "68283d82a7d0e1d5927c",
+    "url": "/memory/static/js/main.f57d8530.chunk.js"
   },
   {
     "revision": "94f647c09a573e59acd4",
     "url": "/memory/static/js/runtime~main.91f5a326.js"
   },
   {
+    "revision": "1e18ea2c451743438140765994603548",
+    "url": "/memory/static/media/15sep.1e18ea2c.png"
+  },
+  {
+    "revision": "e8c33bdec77806cbfefc4bb7a674f03d",
+    "url": "/memory/static/media/198anos.e8c33bde.png"
+  },
+  {
     "revision": "7d4b07e8ee83c8b9b5b788b32b155034",
     "url": "/memory/static/media/Celebremos4.7d4b07e8.png"
+  },
+  {
+    "revision": "898f4b2f285ccae6a8fddbb5cd3ce681",
+    "url": "/memory/static/media/ContadorCard.898f4b2f.png"
   },
   {
     "revision": "e0ae5655f65013b9cdf64248e000eb85",
@@ -44,16 +56,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/memory/static/media/background2.ba8d1abe.jpg"
   },
   {
+    "revision": "ace8591631f50982d34e1a19e1aeaccf",
+    "url": "/memory/static/media/ca3d.ace85916.png"
+  },
+  {
+    "revision": "8878686f07d147f77de0e8f5683aaa3a",
+    "url": "/memory/static/media/caunida.8878686f.png"
+  },
+  {
     "revision": "27b5e57665f234cf62bb06a2d5b8e65b",
     "url": "/memory/static/media/centroamerica.27b5e576.png"
+  },
+  {
+    "revision": "dcef179bb764fe2e7aa145bf745d641b",
+    "url": "/memory/static/media/felicesfiestas.dcef179b.png"
+  },
+  {
+    "revision": "3fa0dd45db3cf122eeb0bb5028c832ca",
+    "url": "/memory/static/media/general.3fa0dd45.png"
   },
   {
     "revision": "6a2c7680a4a4f8dab6d1050417870071",
     "url": "/memory/static/media/guatemala.6a2c7680.png"
   },
   {
+    "revision": "d12340fbdecd2c9bcdc2046065d9f43e",
+    "url": "/memory/static/media/guerra.d12340fb.png"
+  },
+  {
     "revision": "e696f212fecb8269b62e75a53f7c3588",
     "url": "/memory/static/media/honduras2.e696f212.png"
+  },
+  {
+    "revision": "dace6729622bb99079933abc34070d29",
+    "url": "/memory/static/media/logoterrasintexto.dace6729.png"
   },
   {
     "revision": "11d6c53150628da9374cc4af73cdd019",
