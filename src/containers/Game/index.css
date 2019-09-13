@@ -20,7 +20,9 @@
 
 .logoBlanco {
   width: 220px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  align-self: center;
+  justify-self: center;
 }
 
 .regresar {
@@ -38,6 +40,10 @@
   width: 50%;
   height: 60%;
   margin-top: 20px;
+  grid-column-end: span 3;
+  justify-self: end;
+  margin: 0 80px;
+  align-self: center;
 }
 
 .container {
@@ -62,10 +68,14 @@
 @media (max-width: 748px) {
   .logoBlanco {
     width: 150px;
+    grid-column-end: span 2;
   }
 
   .regresar {
     width: 100%;
+    grid-column-end: span 2;
+    margin: 0 0px;
+    padding: 0;
   }
 
   .container {

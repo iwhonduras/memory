@@ -5,7 +5,7 @@ import Table from '../Table';
 import Turnos from '../../components/Turnos';
 
 import './index.css';
-import logoBlanco from '../../Assets/mic/LogoBlanco.png';
+// import logoBlanco from '../../Assets/mic/LogoBlanco.png';
 import ContadorCard from '../../Assets/mic/ContadorCard.png';
 
 export default class Game extends Component {
@@ -58,17 +58,19 @@ export default class Game extends Component {
               regresar={this.regresar}
               restarPar={this.restarPar}
             />
-            <footer className="footer">
-              <img src={logoBlanco} className="logoBlanco" alt="logo" />
-              <button
-                className="regresar"
-                onClick={() => {
-                  this.regresar();
-                }}
-              >
-                Regresar
-              </button>
-            </footer>
+            {
+              //   <footer className="footer">
+              //   <img src={logoBlanco} className="logoBlanco" alt="logo" />
+              //   <button
+              //     className="regresar"
+              //     onClick={() => {
+              //       this.regresar();
+              //     }}
+              //   >
+              //     Regresar
+              //   </button>
+              // </footer>
+            }
           </div>
         ))
       : (render = <Menu jugar={this.jugar} />);

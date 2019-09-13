@@ -21,6 +21,7 @@ import felicesfiestas from '../../Assets/Flags/felicesfiestas.png';
 import general from '../../Assets/Flags/general.png';
 import guerra from '../../Assets/Flags/guerra.png';
 import logoterrasintexto from '../../Assets/Flags/logoterrasintexto.png';
+import logoBlanco from '../../Assets/mic/LogoBlanco.png';
 
 import './index.css';
 
@@ -492,6 +493,15 @@ export default class Table extends Component {
             />
           );
         })}
+        <img src={logoBlanco} className="logoBlanco" alt="logo" />
+        <button
+          className="regresar"
+          onClick={() => {
+            this.regresar();
+          }}
+        >
+          Regresar
+        </button>
       </div>
     );
   }
