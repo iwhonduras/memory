@@ -443,6 +443,8 @@ export default class Table extends Component {
       setTimeout(() => {
         this.unFlipCards(meta2);
       }, 1000);
+    } else {
+      this.props.restarPar();
     }
     return partnerFound;
   };

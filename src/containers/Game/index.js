@@ -11,7 +11,8 @@ import ContadorCard from '../../Assets/mic/ContadorCard.png';
 export default class Game extends Component {
   state = {
     turnos: 0,
-    juegoIniciado: false
+    juegoIniciado: false,
+    paresFaltantes: 8
   };
 
   resetTurnos = () => {
@@ -36,6 +37,11 @@ export default class Game extends Component {
     });
   };
 
+  restarPar = () => {
+    const pares = this.state.paresFaltantes - 1;
+    this.setState({ paresFaltantes: pares });
+  };
+
   render() {
     let render;
     this.state.juegoIniciado
@@ -43,13 +49,14 @@ export default class Game extends Component {
           <div className="game">
             <div className="container">
               <img src={ContadorCard} alt="" />
-              <div className="paresfaltantes">0</div>
+              <div className="paresfaltantes">{this.state.paresFaltantes}</div>
             </div>
             <Turnos turnos={this.state.turnos} />
             <Table
               sumarTurno={this.sumarTurno}
               resetTurnos={this.resetTurnos}
               regresar={this.regresar}
+              restarPar={this.restarPar}
             />
             <footer className="footer">
               <img src={logoBlanco} className="logoBlanco" alt="logo" />
