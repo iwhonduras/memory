@@ -5,12 +5,13 @@
   background-position-y: center;
   background-size: cover;
   padding: 5%;
+  height: 100vh;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20%;
+  /* grid-column-gap: 20%; */
   grid-row-gap: 0px;
   justify-items: center;
   align-items: center;
