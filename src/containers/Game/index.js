@@ -44,6 +44,7 @@ export default class Game extends Component {
             <Table
               sumarTurno={this.sumarTurno}
               resetTurnos={this.resetTurnos}
+              regresar={this.regresar}
             />
             <footer className="footer">
               <img src={logoBlanco} className="logoBlanco" alt="logo" />

@@ -13,6 +13,14 @@ import Honduras2Image from '../../Assets/Flags/honduras2.png';
 import CentroAmericaImage from '../../Assets/Flags/centroamerica.png';
 import CentroAmericaImage2 from '../../Assets/Flags/centroamerica.png';
 import TerraBack from '../../Assets/Flags/terra.png';
+import quincesep from '../../Assets/Flags/15sep.png';
+import anos from '../../Assets/Flags/198anos.png';
+import ca3d from '../../Assets/Flags/ca3d.png';
+import caunida from '../../Assets/Flags/caunida.png';
+import felicesfiestas from '../../Assets/Flags/felicesfiestas.png';
+import general from '../../Assets/Flags/general.png';
+import guerra from '../../Assets/Flags/guerra.png';
+import logoterrasintexto from '../../Assets/Flags/logoterrasintexto.png';
 
 import './index.css';
 
@@ -71,55 +79,55 @@ export default class Table extends Component {
           partnerFound: false,
           isFlipped: false
         },
-        {
-          name: 'Centro America2',
-          meta: 'Centro America',
-          image: CentroAmericaImage2,
-          partnerFound: false,
-          isFlipped: false
-        },
-        {
-          name: 'Honduras2',
-          meta: 'Honduras',
-          image: HondurasImage,
-          partnerFound: false,
-          isFlipped: false
-        },
-        {
-          name: 'Nicaragua2',
-          meta: 'Nicaragua',
-          image: NicaraguaImage,
-          partnerFound: false,
-          isFlipped: false
-        },
-        {
-          name: 'Costa Rica2',
-          meta: 'Costa Rica',
-          image: CostaRicaImage,
-          partnerFound: false,
-          isFlipped: false
-        },
-        {
-          name: 'Salvador2',
-          meta: 'Salvador',
-          image: SalvadorImage,
-          partnerFound: false,
-          isFlipped: false
-        },
-        {
-          name: 'Guatemala2',
-          meta: 'Guatemala',
-          image: GuatemalaImage,
-          partnerFound: false,
-          isFlipped: false
-        },
-        {
-          name: 'Honduras 2-2',
-          meta: 'Honduras 2',
-          image: Honduras2Image,
-          partnerFound: false,
-          isFlipped: false
-        },
+        // {
+        //   name: 'Centro America2',
+        //   meta: 'Centro America',
+        //   image: CentroAmericaImage2,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
+        // {
+        //   name: 'Honduras2',
+        //   meta: 'Honduras',
+        //   image: HondurasImage,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
+        // {
+        //   name: 'Nicaragua2',
+        //   meta: 'Nicaragua',
+        //   image: NicaraguaImage,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
+        // {
+        //   name: 'Costa Rica2',
+        //   meta: 'Costa Rica',
+        //   image: CostaRicaImage,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
+        // {
+        //   name: 'Salvador2',
+        //   meta: 'Salvador',
+        //   image: SalvadorImage,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
+        // {
+        //   name: 'Guatemala2',
+        //   meta: 'Guatemala',
+        //   image: GuatemalaImage,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
+        // {
+        //   name: 'Honduras 2-2',
+        //   meta: 'Honduras 2',
+        //   image: Honduras2Image,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // },
         {
           name: 'Terra',
           meta: 'Terra',
@@ -127,14 +135,71 @@ export default class Table extends Component {
           partnerFound: false,
           isFlipped: false
         },
+        // {
+        //   name: 'Terra2',
+        //   meta: 'Terra',
+        //   image: TerraBack,
+        //   partnerFound: false,
+        //   isFlipped: false
+        // }
         {
-          name: 'Terra2',
-          meta: 'Terra',
-          image: TerraBack,
+          name: 'quincesep',
+          meta: 'quincesep',
+          image: quincesep,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'anos',
+          meta: 'anos',
+          image: anos,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'ca3d',
+          meta: 'ca3d',
+          image: ca3d,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'caunida',
+          meta: 'caunida',
+          image: caunida,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'felicesfiestas',
+          meta: 'felicesfiestas',
+          image: felicesfiestas,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'general',
+          meta: 'general',
+          image: general,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'guerra',
+          meta: 'guerra',
+          image: guerra,
+          partnerFound: false,
+          isFlipped: false
+        },
+        {
+          name: 'logoterrasintexto',
+          meta: 'logoterrasintexto',
+          image: logoterrasintexto,
           partnerFound: false,
           isFlipped: false
         }
       ],
+      cardsInGame: [],
       front: TerraImage,
       attemptCardsFlipped: []
     };
@@ -146,21 +211,43 @@ export default class Table extends Component {
       cards: this.shuffle(this.state.cards)
     });
     this.props.resetTurnos();
+    this.setInitialCards();
   }
+
+  setInitialCards = () => {
+    const cards = this.shuffle(this.state.cards).slice(0, 8);
+    const playingCards = [];
+    cards.forEach((card) => {
+      playingCards.push(card);
+      playingCards.push(this.createPartner(card));
+    });
+    this.setState({ cardsInGame: this.shuffle(playingCards) });
+  };
+
+  createPartner = (card) => {
+    return {
+      name: `${card.name}2`,
+      meta: card.meta,
+      image: card.image,
+      partnerFound: false,
+      isFlipped: false
+    };
+  };
 
   shuffle = (array) => {
     return array.sort(() => Math.random() - 0.5);
   };
 
   checkWin = () => {
-    const win = this.state.cards.every((card) => card.partnerFound);
+    const win = this.state.cardsInGame.every((card) => card.partnerFound);
     if (win) {
       Swal.fire({
         type: 'success',
         title: '¡Felicidades, has ganado!',
         text: ''
       }).then(() => {
-        this.resetGame();
+        // this.resetGame();
+        this.props.regresar();
       });
     }
   };
@@ -308,7 +395,7 @@ export default class Table extends Component {
 
   unFlipCards = (meta) => {
     const state = this.state;
-    const cards = state.cards.map((card) => {
+    const cards = state.cardsInGame.map((card) => {
       if (card.meta === meta) {
         card.isFlipped = false;
       }
@@ -319,7 +406,7 @@ export default class Table extends Component {
   };
 
   getMeta = (name) => {
-    const meta = this.state.cards
+    const meta = this.state.cardsInGame
       .map((card) => {
         let meta;
         if (card.name === name) {
@@ -361,9 +448,9 @@ export default class Table extends Component {
   };
 
   flipCard = (name) => {
-    const { cards } = this.state;
+    const { cardsInGame } = this.state;
     let cardAlreadyFlipped = false;
-    cards.map((card) => {
+    cardsInGame.map((card) => {
       if (card.name === name && card.isFlipped === true) {
         cardAlreadyFlipped = true;
         return card;
@@ -376,7 +463,7 @@ export default class Table extends Component {
     if (cardAlreadyFlipped === false) {
       const check = this.checkFlippedCards(name);
       if (!check) {
-        cards.map((card) => {
+        cardsInGame.map((card) => {
           if (card.name === name && !card.isFlipped) {
             card.isFlipped = false;
           }
@@ -385,7 +472,7 @@ export default class Table extends Component {
       }
       this.setState({
         ...this.state,
-        cards
+        cardsInGame
       });
     }
   };
@@ -393,7 +480,7 @@ export default class Table extends Component {
   render() {
     return (
       <div className="table">
-        {this.state.cards.map((card, index) => {
+        {this.state.cardsInGame.map((card, index) => {
           return (
             <Card
               flag={card}

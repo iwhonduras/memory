@@ -11,7 +11,7 @@ export default class Menu extends Component {
     return (
       <React.Fragment>
         <div className="background">
-          <img src={backgroundNinos} alt="" class="responsiveImage" />
+          <img src={backgroundNinos} alt="" className="responsiveImage" />
         </div>
         <div className="top">
           <img src={celebremos4} className="celebremos" alt="" />
