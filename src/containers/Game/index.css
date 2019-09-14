@@ -67,7 +67,7 @@
 
 @media (max-width: 748px) {
   .logoBlanco {
-    width: 150px;
+    width: 100px;
     grid-column-end: span 2;
   }
 

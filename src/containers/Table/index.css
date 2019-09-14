@@ -8,9 +8,25 @@
   margin-top: 20px;
 }
 
+.copyRightTable {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+.containerre {
+  text-align: center;
+  grid-column-end: span 2;
+}
+
 @media (min-width: 748px) {
   .table {
     padding-left: 250px;
     padding-right: 250px;
+  }
+
+  .containerre {
+    text-align: center;
+    grid-column-end: span 1;
   }
 }

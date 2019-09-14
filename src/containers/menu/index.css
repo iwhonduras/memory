@@ -46,6 +46,15 @@
   top: -15px;
 }
 
+.copyRightMenu {
+  position: relative;
+  top: -55px;
+  left: 5px;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
 @media (max-width: 748px) {
   .ninos {
     top: -150px;

@@ -22,6 +22,7 @@ import general from '../../Assets/Flags/general.png';
 import guerra from '../../Assets/Flags/guerra.png';
 import logoterrasintexto from '../../Assets/Flags/logoterrasintexto.png';
 import logoBlanco from '../../Assets/mic/LogoBlanco.png';
+import logoBlanco2 from '../../Assets/mic/LogoBlanco2.png';
 
 import './index.css';
 
@@ -493,11 +494,17 @@ export default class Table extends Component {
             />
           );
         })}
-        <img src={logoBlanco} className="logoBlanco" alt="logo" />
+        <div className="containerre">
+          <img src={logoBlanco2} className="logoBlanco" alt="logo" />
+          <p className="copyRightTable">
+            Desarrollado por Ideaworks international - 2019 ©
+          </p>
+        </div>
+
         <button
           className="regresar"
           onClick={() => {
-            this.regresar();
+            this.props.regresar();
           }}
         >
           Regresar
